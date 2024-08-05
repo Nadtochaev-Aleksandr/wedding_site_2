@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap'); */ /*Caveat*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /*Lobster*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+    text-indent: 20px;
+}
+
+a {
+    color: #2F4F4F;
+}
+
+/* body {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+} */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* Типографика */    
+    /* font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; */
+/* 
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal; */
+
+    /* Оформление */
+    /* background-image: linear-gradient(to bottom right, #FFFFE0, #98FB98); */
+    background-color: #FAF0E6;
+}
+
+
+.part1 {
+    /* Блочная модель */
+    width:100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 50px;
+
+    /* Оформление */
+    background-image:url('../img/2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    /* Типографика */
+    font-family: "Great Vibes", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 10vw;
+    color: white;
+}
+
+.p1_main_text_left {
+    /* Блочная модель */
+    padding-left: 5%;
+}
+
+.p1_main_text_center {
+    /* Блочная модель */
+    padding-left: 40%;
+}
+
+.p1_main_text_right {
+    /* Блочная модель */
+    text-align: right;
+    padding-right: 5%;
+}
+
+.p1_date {
+    /* Блочная модель */
+    padding-left: 5%;
+
+    /* Типографика */
+    /* font-size: 5vw; */
+}
+
+.part2 {
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    width: 100%;
+    max-width: 1280px;
+    padding: 10px 40px;
+    box-sizing: border-box;
+
+    /* Типографика */
+    line-height: 1.2;
+}
+
+.part2 h2 {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.part2 p {
+    text-align: justify;
+}
+
+footer {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1280px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_info_1 {
+    display: flex;
+    margin: 5px;
+}
+
+.footer_info_1 a {
+    margin-left: 5px;
+    padding-left: 10px;
+}
+
+.pin_link {
+    padding-top: 10px;
+}
+
+#form_link {
+    /* Блочная модель */
+    text-align: center;
+    padding: 40px;
+
+    /* Типографика */
+    font-size: 32px;
+    color: #2F4F4F;
+}
+
+@media (max-width: 1000px) { /* В данном случае правилу @media определена максимальная ширина экрана в 720 пикселей, следовательно когда ширина экрана будет больше 720 пикселей будет работать общие настройки (прописанные ранее), когда ширина экрана будет меньше 720 пикселей - будут действовать настройки, прописанные ниже. */
+
+    .part1 {
+        /* Оформление */
+        background-image:url('../img/3.jpg');
+        text-shadow:9px 9px 1px rgba(128, 128, 128, 1), 10px 10px 3px black;
+        font-size: 15vw;
+    }
+
+    /* .p1_main_text_left {
+        text-shadow:10px 10px 1px rgba(0, 0, 0, 1), 10px 10px 3px white;
+    } */
+    footer {
+        flex-direction: column;
+    }
+}
