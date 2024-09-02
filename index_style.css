@@ -167,12 +167,23 @@ footer img {
     color: #2F4F4F;
 }
 
-#warning {
+#warning_1 {
+    font-size: 52px;
+    /* color: orange; */
+}
+
+#warning_2 {
     font-size: 52px;
     color: red;
 }
 
 #new_block_1 {
+    /* border-radius: 10px;
+    border: 5px solid orange; */
+    padding: 15px;
+}
+
+#new_block_2 {
     border-radius: 10px;
     border: 5px solid red;
     padding: 15px;
@@ -194,9 +205,17 @@ footer img {
         flex-direction: column;
     }
 
-    #warning {
+    #warning_1 {
         font-size: 32px;
     }
+
+    #warning_2 {
+        font-size: 32px;
+    }
+
+    #new_block_1 {
+        padding: 10px;
+    }    
 
     #new_block_1 {
         padding: 10px;
